@@ -25,7 +25,7 @@ stat_summary <- function(data, group_factor, summarize_factor) {
          "You have provided the summarize_factor object of class: ", class(data[[summarize_factor]])[1]
     )
   }
-  data %>%
+  data tidyverse::%>%
     dplyr::group_by(.data[[group_factor]], na.rm=T) %>%
     dplyr::summarize(Mean = mean(.data[[summarize_factor]], na.rm=T),
               Minimum = min(.data[[summarize_factor]], na.rm=T),
