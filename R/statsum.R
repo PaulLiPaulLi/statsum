@@ -23,9 +23,9 @@ stat_sum <- function(data) {
   }
    Minimum <- min(data, na.rm=T)
    Maximum <- max(data, na.rm=T)
-   Q1 <- quantile(data, 0.25, na.rm=T)
-   Median <- median(data, na.rm=T)
-   Q3 <- quantile(data, 0.75, na.rm=T)
+   Q1 <- stats::quantile(data, 0.25, na.rm=T)
+   Median <- stats::median(data, na.rm=T)
+   Q3 <- stats::quantile(data, 0.75, na.rm=T)
    Range <- range(data, na.rm=T)
-   IQR <- IQR(data, na.rm=T)
-   SD <- sd(data, na.rm=T)}
+   IQR <- stats::IQR(data, na.rm=T)
+   SD <- stats::sd(data, na.rm=T)}
