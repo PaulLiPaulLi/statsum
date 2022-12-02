@@ -20,7 +20,6 @@ the numeric minimum, first quartile (Q1), median, third quartile (Q3), maximum, 
 Produce summary statistics on the factor of interest to be summarized on each group defined and specified by the grouping factor of interest
 }
 \examples{
-library(tidyverse)
 library(datateachr)
 neighbourhood_diameter_summary <- stat_summary(vancouver_trees, "neighbourhood_name", "diameter")
 }
