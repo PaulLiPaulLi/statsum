@@ -32,6 +32,6 @@ the numeric minimum, first quartile (Q1), median, third quartile (Q3), maximum, 
 Produce summary statistics on the numeric variable/column in the data
 }
 \examples{
-library(datateachr)
-Diameter_Stat <- stat_sum(vancouver_trees$diameter)
+library(gapminder)
+Population_Stat <- stat_sum(gapminder$pop)
 }
