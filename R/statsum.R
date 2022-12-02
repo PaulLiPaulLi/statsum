@@ -13,8 +13,8 @@
 #' @return the numeric minimum, first quartile (Q1), median, third quartile (Q3), maximum, range, and interquartile range (IQR), and standard deviation of the data
 #'
 #' @examples
-#' library(datateachr)
-#' Diameter_Stat <- stat_sum(vancouver_trees$diameter)
+#' library(gapminder)
+#' Population_Stat <- stat_sum(gapminder$pop)
 #' @export
 
 stat_sum <- function(data) {
