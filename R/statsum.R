@@ -26,8 +26,8 @@ stat_summary <- function(data, group_factor, summarize_factor) {
     )
   }
   data %>%
-    group_by(.data[[group_factor]], na.rm=T) %>%
-    summarize(Mean = mean(.data[[summarize_factor]], na.rm=T),
+    dplyr::group_by(.data[[group_factor]], na.rm=T) %>%
+    dplyr::summarize(Mean = mean(.data[[summarize_factor]], na.rm=T),
               Minimum = min(.data[[summarize_factor]], na.rm=T),
               Q1 = quantile(.data[[summarize_factor]], 0.25, na.rm=T),
               Median = median(.data[[summarize_factor]], na.rm=T),
@@ -36,3 +36,4 @@ stat_summary <- function(data, group_factor, summarize_factor) {
               Range = range(.data[[summarize_factor]], na.rm=T),
               IQR = IQR(.data[[summarize_factor]], na.rm=T),
               Standard_deviation = sd(.data[[summarize_factor]], na.rm = T))}
+
